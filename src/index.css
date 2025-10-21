@@ -1,0 +1,148 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background-color: #f8f9fb;
+  color: #333;
+}
+
+.navbar {
+  background-color: #fff;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.navbar h1 {
+  color: #007bff;
+}
+
+.nav-links {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #007bff;
+  font-weight: 600;
+  border: none;
+  background: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.nav-links a:hover, .nav-links button:hover {
+  color: #0056b3;
+  transform: scale(1.05);
+}
+
+.container {
+  padding: 40px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+}
+
+.product-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.product-card img {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+
+.product-card.detail {
+  display: flex;
+  gap: 30px;
+}
+
+.btn-group {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+button, .btn-detail {
+  background-color: #007bff;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover, .btn-detail:hover {
+  background-color: #0056b3;
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+.login-card {
+  background: #fff;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  width: 320px;
+  text-align: center;
+}
+
+.login-card input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.fade-in {
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.dashboard-nav {
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+}
+
+.dashboard-nav a {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.dashboard-nav a:hover {
+  color: #0056b3;
+}
+
+.dashboard-content {
+  background: #fff;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
